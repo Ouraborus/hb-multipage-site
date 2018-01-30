@@ -1,0 +1,35 @@
+{
+  "name": "hb-multipage-site",
+  "version": "1.0.0",
+  "description": "This exercise will help you to have a better understanding of the correct structure of a web project.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ouraborus/hb-multipage-site.git"
+  },
+  "author": "Esteban Cardona",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ouraborus/hb-multipage-site/issues"
+  },
+  "homepage": "https://github.com/Ouraborus/hb-multipage-site#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "standard": "^10.0.3",
+    "style-loader": "^0.20.1",
+    "stylelint": "^8.3.1",
+    "stylelint-config-recommended-scss": "^2.0.0",
+    "stylelint-scss": "^2.1.0",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
