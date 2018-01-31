@@ -1,5 +1,5 @@
 import {Test} from './components/test.js'
-import styles from './components/test.scss'
+import './components/test.scss'
 
 /* eslint-disable */
 new Test('.wrapper')

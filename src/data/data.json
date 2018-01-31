@@ -1,0 +1,21 @@
+{
+  "logo": {
+    "img": "Just for Test Purposes",
+    "link": ""
+  },
+  "links": [
+    {
+      "label": "",
+      "href": ""
+    },
+    {
+      "label": "",
+      "links": [
+        {
+          "label": "",
+          "href": ""
+        }
+      ]
+    }
+  ]
+}
