@@ -1,18 +1,30 @@
 {
   "logo": {
-    "img": "Just for Test Purposes",
+    "img": "Just For Test Purposes",
     "link": ""
   },
   "links": [
     {
-      "label": "",
-      "href": ""
+      "label": "Link simple 1",
+      "href": "www.hola.com"
     },
     {
-      "label": "",
+      "label": "Otro link simple",
+      "href": "www.hola2.com"
+    },
+    {
+      "label": "Un link simple más",
+      "href": "www.hola3.com"
+    },
+    {
+      "label": "casas",
       "links": [
         {
-          "label": "",
+          "label": "casa 1",
+          "href": ""
+        },
+        {
+          "label": "casa 2",
           "href": ""
         }
       ]

@@ -1,0 +1,36 @@
+.navbar{
+width: 100%;
+height: 6vh;
+background-color: #607d8b;
+position: fixed;
+
+&__wrapper{
+	width: 100%;
+	height: 100%;
+}
+&__menu{
+	width: 100%;
+	height: 100%;
+}
+
+}
+.menu{
+	position: relative;
+	cursor: pointer;
+	&__icon {
+		margin: 2px;
+		position: relative;
+		padding-left: 1em;
+	}
+	&__icon:before {
+		content: "";
+		position: absolute;
+		top: 0.5em;
+		width: 1.5em;
+		height: 0.16em;
+		background: black;
+		box-shadow: 
+    0 0.4em 0 0 black,
+    0 0.8em 0 0 black;
+	}
+}

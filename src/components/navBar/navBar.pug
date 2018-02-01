@@ -1,16 +1,15 @@
-doctype html
-html
-  head
-    title hb-multiple-pages #{logo.img}
-  body
-    nav.navbar
-      div.navbar__mobile
-      ul
-        each label in links
-          if(label.lenght > 1){
-            li.navbar__link
-            a(href="#{label.links}") #{label.label}
-            }
-            else {
-            li.navbar__link
-            a(href="#{label.links}") #{label.label}}            }
+div.navbar__wrapper
+  div.navbar__menu
+    span.menu
+      div.menu__icon
+//- ul
+//- each element in links
+//-   if Object.keys(element).includes('href')
+//-     li.navbar__link
+//-       a(href="#{element.href}") #{element.label}
+//-   else
+//-     li.navbar__link  #{element.label}  
+//-      ul.navbar__dropdown
+//-       each subElement in element.links
+//-           li.navbar__link 
+//-             a(href="#{subElement.href}") #{subElement.label}
