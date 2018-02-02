@@ -1,15 +1,17 @@
-div.navbar__wrapper
-  div.navbar__menu
-    span.menu
-      div.menu__icon
-//- ul
-//- each element in links
-//-   if Object.keys(element).includes('href')
-//-     li.navbar__link
-//-       a(href="#{element.href}") #{element.label}
-//-   else
-//-     li.navbar__link  #{element.label}  
-//-      ul.navbar__dropdown
-//-       each subElement in element.links
-//-           li.navbar__link 
-//-             a(href="#{subElement.href}") #{subElement.label}
+button.navbar__icon
+  span
+  span
+  span
+img(src="#{logo.link}", alt="#{logo.img}")
+div.navbar__list
+  ul
+    each element in links
+      if Object.keys(element).includes('href')
+        li.navbar__link
+          a(href="#{element.href}") #{element.label}
+      else
+        li.navbar__link  #{element.label}  
+        ul.navbar__dropdown
+          each subElement in element.links
+              li.navbar__link 
+                a(href="#{subElement.href}") #{subElement.label}
