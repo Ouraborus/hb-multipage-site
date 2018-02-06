@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin') // installed via npm
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
 const path = require('path')
 
@@ -31,11 +32,10 @@ const config = {
         ]}
     ]},
   plugins: [
-    new StyleLintPlugin({}),
+    new StyleLintPlugin(),
     new HtmlWebpackPlugin({template: './src/index.html'}),
-    new HtmlWebpackPlugin({
-      title: 'production'
-    })
+    new ExtractTextPlugin('styles.css')
+
   ]
 }
 

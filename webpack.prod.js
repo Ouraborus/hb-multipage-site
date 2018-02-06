@@ -10,7 +10,7 @@ module.exports = merge(common, {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           use: [ {loader: 'css-loader', options: {minimize: true, sourceMap: false}},
-            'sass-loader?sourceMap']
+            'sass-loader']
         })
       }
     ]},

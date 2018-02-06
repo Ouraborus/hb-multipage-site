@@ -2,8 +2,8 @@ import data from '../../data/data.json'
 import template from './navBar.pug'
 
 export class NavBar {
-  constructor (node) {
-    this.node = document.querySelector(node)
+  constructor (selector) {
+    this.node = document.querySelector(selector)
     this.elements = {}
 
     this.fillHtml()
@@ -13,10 +13,10 @@ export class NavBar {
   }
 
   setElements () {
-    this.elements.menu = this.node.children[0]
-    this.elements.navbar = this.node.children[2]
+    this.elements.menu = this.node.querySelector('.navbar__icon')
+    this.elements.navbar = this.node.querySelector('.navbar__list')
     this.elements.dropDownElmts = this.node.querySelectorAll('.js-dropdown')
-    this.elements.activeElmt = undefined
+    this.elements.activeElmt = null
   }
 
   fillHtml () {
@@ -24,12 +24,12 @@ export class NavBar {
   }
   setNavAnimation () {
     this.elements.menu.addEventListener('click', () => {
-      this.toggleElmt(this.elements.menu, 'active')
-      this.toggleElmt(this.elements.navbar, 'navbar__list--active')
-      this.toggleElmt(document.body, 'navbar__background')
+      this.toggleElement(this.elements.menu, 'active')
+      this.toggleElement(this.elements.navbar, 'navbar__list--active')
+      this.toggleElement(document.body, 'navbar__background')
     })
   }
-  toggleElmt (element, data) {
+  toggleElement (element, data) {
     element.classList.toggle(data)
   }
   setDropDown () {
@@ -38,7 +38,7 @@ export class NavBar {
     })
   }
   dropDownController (actual, selected, data) {
-    if (actual === undefined || actual === selected) {
+    if (actual === null || actual === selected) {
       this.elements.activeElmt = selected
       this.elements.activeElmt.classList.toggle(data)
     } else {
