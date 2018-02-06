@@ -99,6 +99,15 @@
 		&:hover {
 			background: $link-hover;
 		}
+		&--dropdown:after {
+			color: rgb(0, 0, 0);
+			content: " ▾";
+
+			.navbar__dropdown--collapsed ~ &:after {
+				content: " ▲";
+			}
+		}
+
 		@include large {
 			padding: 0 20px;
 			height: $regular-height;
@@ -108,6 +117,7 @@
 			background: transparent;
 		}
 	}
+
 	&__dropdown {
 		display: flex;
 		flex-direction: column;
@@ -116,6 +126,7 @@
 		width: 100%;
 		height: 100%;
 		transition: height $navbar-animation;
+
 		@include large {
 			position: absolute;
 			background: $list-bg;

@@ -12,7 +12,7 @@ div.navbar__list
             a(href=element.href) #{element.label}
       else
         li(class="navbar__link js-dropdown")
-          b #{element.label}
+          b.navbar__link--dropdown #{element.label}
           ul(class="navbar__dropdown navbar__dropdown--collapsed")
             each subElement in element.links
                 li.navbar__link 
