@@ -1,0 +1,22 @@
+{
+    "header": "HEADER",
+    "description": "Description Content",
+    "cta": {
+      "label": "I'm the CTA click me pls",
+      "url": "www"
+    },
+    "images": {
+      "small": {
+        "url": "",
+        "description": ""
+      },
+      "medium": {
+        "url": "",
+        "description": ""
+      },
+      "large": {
+        "url": "",
+        "description": ""
+      }
+    }
+  }

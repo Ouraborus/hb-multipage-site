@@ -21,6 +21,10 @@ Take into consideration the following global rules for all components / features
 ### Main Menu
 This component should be present on every page since it is a global component that helps the user to navigate between different pages.
 
+## Hero (Content Images)
+This component can be included on any page and should include images that should be treated as content instead of decorative images, meaning that you need to implement it using `picture` tags instead of setting the image as a background using CSS.
+
+
 #### Data Structure
 ```json
 {
