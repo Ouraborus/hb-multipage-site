@@ -5,6 +5,7 @@
 	position: fixed;
 	display: flex;
 	justify-content: center;
+	z-index: 5;
 
 	&__icon {
 		position: absolute;
@@ -102,10 +103,6 @@
 		&--dropdown:after {
 			color: rgb(0, 0, 0);
 			content: " ▾";
-
-			.navbar__dropdown--collapsed ~ &:after {
-				content: " ▲";
-			}
 		}
 
 		@include large {
