@@ -1,6 +1,5 @@
 import data from '../../data/data.json'
 import template from './navBar.pug'
-import './_navBar.scss'
 
 export class NavBar {
   constructor (selector) {
