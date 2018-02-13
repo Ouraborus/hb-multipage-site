@@ -6,13 +6,9 @@ export class Hero {
     this.node = document.querySelector(selector)
 
     this.fillHtml(data)
-    this.setElements()
   }
 
   fillHtml () {
     this.node.innerHTML = template(data)
-  }
-  setElements () {
-    return false
   }
 }
