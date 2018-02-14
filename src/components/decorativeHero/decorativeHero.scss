@@ -1,0 +1,67 @@
+.hero {
+	top: 55px;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background: #ff88ff;
+	&__container {
+			bottom: 5%;
+			left: 30px;
+			position: absolute;
+	}
+	&__header {
+			width: 100%;
+			height: 100%;
+			font-size: 40px;
+			margin-top: 15px;
+			@include small {
+					font-size: 20px;
+			}
+			@include medium {
+					font-size: 60px;
+			}
+			@include large {
+					font-size: 80px;
+			}
+	}
+	&__description {
+			width: 100%;
+			height: 100%;
+			font-size: 22px;
+			margin-top: 15px;
+			@include small {
+					font-size: 20px;
+			}
+			@include medium {
+					font-size: 40px;
+			}
+			@include large {
+					font-size: 40px;
+			}
+	}
+	&__cta {
+			height: 50px;
+			background: $background;
+			border: none;
+			font-size: 15px;
+			box-shadow: $box-shadow;
+			margin-top: 15px;
+			@include small {
+					font-size: 10px;
+			}
+			@include medium {
+					font-size: 20px;
+			}
+			@include large {
+					font-size: 30px;
+			}
+	}
+	&__img {
+			width: 100%;
+			height: 100%;
+			top: 0;
+			position: absolute;
+			background: url('https://images.unsplash.com/photo-1507963901243-ebfaecd5f2f4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8f1afdd53eeeeebe1d5fe866294c6da9&auto=format&fit=crop&w=1679&q=80') no-repeat;
+			background-size: 100%;
+	}
+}
