@@ -7,5 +7,5 @@ import { DecorativeHero } from './components/decorativeHero/decorativeHero.js'
 /* eslint-disable */
     new NavBar('.navbar')
     // new Hero('.hero')
-    new DecorativeHero('.hero')
+    new DecorativeHero('.decorative-hero')
 /* eslint-enable */
