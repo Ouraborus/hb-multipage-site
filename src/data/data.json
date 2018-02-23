@@ -1,46 +1,91 @@
 {
-  "logo": {
-    "img": "Collections",
-    "link": "https://i.imgur.com/SPZIVuD.png"
+  "navbar": {
+    "logo": {
+      "img": "Collections",
+      "link": "https://i.imgur.com/SPZIVuD.png"
+    },
+    "links": [
+      {
+        "label": "Link 1",
+        "href": "www.hola.com"
+      },
+      {
+        "label": "Link 2",
+        "href": "www.hola2.com"
+      },
+      {
+        "label": "Link 4",
+        "links": [
+          {
+            "label": "Link 4.1",
+            "href": ""
+          },
+          {
+            "label": "Link 4.2",
+            "href": ""
+          }
+        ]
+      },
+      {
+        "label": "Link 3",
+        "href": "www.hola3.com"
+      },
+      {
+        "label": "Link 4",
+        "links": [
+          {
+            "label": "Link 4.1",
+            "href": ""
+          },
+          {
+            "label": "Link 4.2",
+            "href": ""
+          }
+        ]
+      }
+    ]
   },
-  "links": [
-    {
-      "label": "Link 1",
-      "href": "www.hola.com"
+  "hero":{
+    "header": "HEADER",
+    "description": "Description Content",
+    "cta": {
+      "label": "Description Content",
+      "url": "www.google.com"
     },
-    {
-      "label": "Link 2",
-      "href": "www.hola2.com"
-    },
-    {
-      "label": "Link 4",
-      "links": [
-        {
-          "label": "Link 4.1",
-          "href": ""
-        },
-        {
-          "label": "Link 4.2",
-          "href": ""
-        }
-      ]
-    },
-    {
-      "label": "Link 3",
-      "href": "www.hola3.com"
-    },
-    {
-      "label": "Link 4",
-      "links": [
-        {
-          "label": "Link 4.1",
-          "href": ""
-        },
-        {
-          "label": "Link 4.2",
-          "href": ""
-        }
-      ]
+    "images": {
+      "small": {
+        "url": "https://i.imgur.com/M6G4XyQ.jpg",
+        "description": ""
+      },
+      "medium": {
+        "url": "https://i.imgur.com/DC1U5Uu.jpg",
+        "description": ""
+      },
+      "large": {
+        "url": "https://i.imgur.com/0yXTUw9.jpg",
+        "description": ""
+      }
     }
-  ]
+  },
+  "decorativeHero": {
+    "header": "HEADER",
+    "description": "Description Content",
+    "cta": {
+      "label": "Description Content",
+      "url": "www"
+    },
+    "images": {
+      "small": {
+        "url": "https://i.imgur.com/M6G4XyQ.jpg"
+      },
+      "medium": {
+        "url":
+          "https://i.imgur.com/DC1U5Uu.jpg"
+      },
+      "large": {
+        "url":
+          "https://i.imgur.com/0yXTUw9.jpg"
+      }
+    }
+  }
 }

@@ -5,7 +5,7 @@ export class Hero {
   constructor (selector) {
     this.node = document.querySelector(selector)
 
-    this.fillHtml(data)
+    this.fillHtml(data.hero)
   }
 
   fillHtml () {

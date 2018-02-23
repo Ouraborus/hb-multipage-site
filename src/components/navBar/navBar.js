@@ -20,7 +20,7 @@ export class NavBar {
   }
 
   fillHtml () {
-    this.node.innerHTML = template(data)
+    this.node.innerHTML = template(data.navbar)
   }
   setNavAnimation () {
     this.elements.menu.addEventListener('click', () => {
